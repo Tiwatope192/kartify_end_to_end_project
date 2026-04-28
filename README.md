@@ -128,4 +128,5 @@ It highlights the importance of:
 - and effective communication of insights in supporting data-driven decision-making.
 
 ## Author
-Tiwatope
+Peju Sokunle
+

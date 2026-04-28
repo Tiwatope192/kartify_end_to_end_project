@@ -13,8 +13,16 @@ The pipeline follows a modern ELT approach and applies the **Medallion Architect
 - Apply Medallion Architecture for data transformation  
 - Design reliable and reusable data models  
 - Create business-focused dashboards for decision-making  
-- Demonstrate best practices in data engineering and analytics  
-
+- Demonstrate best practices in data engineering and analytics
+  
+ ## Repository Structure
+kartify_end_to_end_project/
+## Project Workflow
+1. **Documentation & Data Modeling** → `01_docs/`  
+2. **Data Exploration & Ingestion** → `02_notebooks/`  
+3. **Data Transformation (Medallion Architecture)** → `03_sql/`  
+4. **Visualization & Dashboards** → `04_dashboards/`  
+  
 ## Data Pipeline Architecture
 The project is structured into the following stages:
 
@@ -43,25 +51,8 @@ Data is stored and transformed in Snowflake using the **Medallion Architecture**
 ### 3. Data Visualization (Power BI)
 Interactive dashboards are built on top of the Gold layer to deliver business insights.
 
-## Repository Structure
-kartify_end_to_end_project/
-│
-├── Notebook/
-│ └── (data ingestion scripts)
-│
-├── sql/
-│ ├── bronze/
-│ ├── silver/
-│ └── gold/
-│
-├── dashboards/
-│ ├── customer_metrics_dashboard.pbix
-│ └── payment_performance_dashboard.pbix
-
 ## Data Model
-
 The Gold layer contains aggregated fact tables designed for reporting:
-
 - `FACT_CUSTOMER_METRICS`  
 - `FACT_SALES_SUMMARY`  
 - `FACT_PAYMENT_SUMMARY`  
